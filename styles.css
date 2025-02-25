@@ -677,6 +677,7 @@ footer {
   .work-page-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 24px auto;
   }
 
@@ -715,11 +716,13 @@ footer {
   .border-radius-top {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
   }
 
   .border-radius-bottom {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    border-top-right-radius: 0px;
   }
 
   /* Testimonials-page */
@@ -732,6 +735,8 @@ footer {
   .testimonails-page-block {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 332px;
     width: 100%;
   }
@@ -871,5 +876,11 @@ footer {
   .header-list-button {
     margin: 16px auto;
     width: 288px;
+  }
+}
+
+@media (max-width: 300px) {
+  .get-in-touch-page-block-text {
+    font-size: 10px;
   }
 }
